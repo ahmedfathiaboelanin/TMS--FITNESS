@@ -3,8 +3,10 @@
     margin: 0%;
 }
 body{
-    background-color: rgb(0, 0, 0);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../pics/pic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container{
     width: 100%;
@@ -67,6 +69,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 section .discribe{
     width: 60%;
@@ -80,14 +83,14 @@ section .discribe h1, section .discribe h2, section .discribe h4{
 section h2{
     margin-bottom: 20px;
 }
-section .discribe a{
+section .discribe .trans{
     padding: 15px 10px;
     border-radius: 20px;
     border: 1px solid transparent;
     background-color: rgb(241, 16, 73);
     color: white;
     text-decoration: none;
-    width: 20%;
+    width: 50%;
     text-align: center;
 }
 section .discribe a:hover{
@@ -102,10 +105,81 @@ section .certificate{
 }
 section .certificate img{
     width: 80%;
-    border-radius: 60px;
+    border-radius: 30px;
 }
 section .certificate img:hover{
     transform: scale(1.3);
     cursor: zoom-in;
     transition: .5s;
+}
+/* media */
+@media screen and (max-width:575px) {
+    .navlinks{
+        display: none;
+    }
+    
+    .subscribe{
+        display: none;
+    }
+    .navlinks {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(44, 41, 41);
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+    }
+    .navlinks ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navlinks ul li{
+        
+    }
+    .navlinks a{
+        color: white;
+    }
+    .navlinks.is-active{
+        display: block;
+    }
+    section .discribe{
+        margin-top: 20px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        align-items: center;
+    }
+    .certificate{
+        margin: 25px 0px;
+        width: 200px;
+    }
+    .certificate img{
+       min-width: 200px;
+       border-radius: 30px;
+    }
+    .hamburger{
+        display: block;
+        /* background-color: aqua; */
+        width: 50px;
+        height: 50px;
+        z-index: 101;
+    }
+    .hamburger div{
+        width: 80%;
+        height: 5px;
+        background-color: white;
+        margin: 7px 5px;
+    }
+}
+@media screen and (max-width:350px) {
+    .navtext{
+        font-size: 20px;
+    }
 }
