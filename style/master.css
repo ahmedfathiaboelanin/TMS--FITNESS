@@ -144,6 +144,9 @@ section .sectext a img:hover{
     display: none;
 
 }
+.navlink{
+    display: none;
+}
 /* end sec */
 /* start media */
 @media screen and (max-width:575px) {
@@ -212,10 +215,98 @@ section .sectext a img:hover{
         background-color: white;
         margin: 7px 5px;
     }
+    
+}
+@media screen and (min-width:576px) and (max-width:1332px) {
+    .subscribe{
+        display: none;
+    }
+    .navlinks {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(44, 41, 41);
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+    }
+    .navlinks ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navlinks a{
+        color: white;
+    }
+    .navlinks.is-active{
+        display: block;
+    }
+    .navlink ul{
+        display: flex;
+        list-style: none;
+    }
+    .navlink ul li{
+        margin: 0px 20px;
+    }
+    .navlink ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+    }
+    section{
+        margin-top: 20px;
+        display: flex;
+        /* flex-direction: column; */
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .sectext {
+        width: 100vw;
+        align-items: flex-start;
+    }
+    .sectext h1{
+        max-width: 200px;
+    }
+    .hamburger{
+        display: block;
+        /* background-color: aqua; */
+        width: 50px;
+        height: 50px;
+        z-index: 101;
+    }
+    .hamburger div{
+        width: 80%;
+        height: 5px;
+        background-color: white;
+        margin: 7px 5px;
+    }
 }
 @media screen and (max-width:350px) {
     .navtext{
         font-size: 20px;
+    }
+}
+@media screen and (max-width:909px) and (min-width:576px) {
+    .navlink ul{
+        display: flex;
+        list-style: none;
+    }
+    .navlink ul li{
+        margin: 0px 5px;
+    }
+    .navlink ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .navtext h2{
+        font-size: 20px;
+    }
+    .twitter{
+        display: none;
     }
 }
 /* end media */
