@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMR Calculator</title>
+    <link rel="stylesheet" href="../style/bmr.css">
+</head>
+<body>
+    <div class="container">
+        <h1>BMR Calculator</h1>
+        <div class="bmr">
+            <input type="number" class="input" id="age" placeholder="Enter your age">
+            <input type="number" class="input" id="weight" placeholder="Enter your weight">
+            <input type="number" class="input" id="length" placeholder="Enter your Height">
+            <input type="number" class="input" id="fat" placeholder="Enter your fat percentage if possible">
+            <input type="text" id="gender" placeholder="male or female">
+            <input onclick="calculate()" class="submit" type="submit" value="calculate">
+            <span id="total">Your BMR is:</span>
+        </div>
+        <a class="home" href="../index.html"><img src="../pics/spacefm_103907.png" alt=""></a>
+    </div>
+    <script src="../scripts/bmr.js"></script>
+</body>
+</html>

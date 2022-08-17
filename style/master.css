@@ -1,0 +1,221 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url("../pics/pic.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+/* start nav */
+nav{
+    height: 20vh;
+    /* padding-top: 50px; */
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    width: 90%;
+}
+.navtext{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+span{
+    color: rgb(241, 16, 73);
+}
+nav .navlinks ul li{
+    list-style: none;
+    margin:0px 10px ;
+}
+nav .navlinks ul{
+    display: flex;
+}
+nav .navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+nav .navlinks ul li a:hover{
+    color: rgb(241, 16, 73);
+    border-bottom: 2px solid rgb(241, 16, 73);
+    transition: 0.4s;
+}
+.subscribe a{
+    padding: 10px;
+    background-color: rgb(241, 16, 73);
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    transition: .5s;
+}
+.subscribe a:hover{
+    background-color: black;
+    border: 1px solid rgb(241, 16, 73);
+}
+/* end nav */
+/* start sec */
+section{
+    /* margin-top: 50px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+}
+section .sectext{
+    width: 40%;
+    color: white;
+}
+h4{
+    color: rgb(221, 215, 215);
+}
+section .sectext h1{
+    font-size: 40px;
+    margin: 10px 0px;
+}
+section .sectext h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+section .sectext a img{
+    width: 30px;
+    border-radius: 50%;
+}
+.image{
+    margin: 0px 3px;
+    text-decoration: none;
+}
+.sectext .about{
+    padding: 15px;
+    background-color: rgb(241, 16, 73);
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 20px;
+    max-width: 23%;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid transparent;
+}
+.sectext .about:hover{
+    background-color: black;
+    border: 1px solid rgb(241, 16, 73);
+    transition: .5s;
+    transition-timing-function: linear;
+}
+section .sectext a img:hover{
+    transform: scale(1.2);
+    transition: .3s;
+}
+.secphoto{
+    width: 40%;
+    height: 100%;
+    /* position: relative; */
+}
+.secphoto img{
+    width: 100%;
+}
+.sum{
+    /* width: 30%; */
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%,-50%); */
+    height: 100%;
+}
+.secphoto:hover{
+    margin-right: 20px; transition: .7s linear;
+}
+.hamburger{
+    display: none;
+
+}
+/* end sec */
+/* start media */
+@media screen and (max-width:575px) {
+    .navlinks,.secphoto{
+        display: none;
+    }
+    .subscribe{
+        display: none;
+    }
+    .navlinks {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(44, 41, 41);
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+    }
+    .navlinks ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navlinks ul li{
+        
+    }
+    .navlinks a{
+        color: white;
+    }
+    .navlinks.is-active{
+        display: block;
+    }
+    section, .sectext{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+    }
+    .sectext {
+        width: 100%;
+        align-items: flex-start;
+    }
+    .sectext h1{
+        max-width: 200px;
+    }
+    .about1{
+        display: none;
+    }
+    .gmail, .twitter{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        /* background-color: aqua; */
+        width: 50px;
+        height: 50px;
+        z-index: 101;
+    }
+    .hamburger div{
+        width: 80%;
+        height: 5px;
+        background-color: white;
+        margin: 7px 5px;
+    }
+}
+@media screen and (max-width:350px) {
+    .navtext{
+        font-size: 20px;
+    }
+}
+/* end media */
