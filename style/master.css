@@ -3,8 +3,7 @@
     margin: 0%;
 }
 body{
-    /* background-color: rgb(0, 0, 0); */
-    background-image: url("../pics/pic.jpg");
+    /* background-image: url("../pics/pic.jpg"); */
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -150,6 +149,14 @@ section .sectext a img:hover{
 /* end sec */
 /* start media */
 @media screen and (max-width:575px) {
+    body{
+        background-image: url("../pics/pic.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
     .navlinks,.secphoto{
         display: none;
     }
