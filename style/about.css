@@ -112,8 +112,76 @@ section .certificate img:hover{
     cursor: zoom-in;
     transition: .5s;
 }
+.navlink{
+    display: none;
+}
 /* media */
 @media screen and (max-width:575px) {
+    .navlinks{
+        display: none;
+    }
+    
+    .subscribe{
+        display: none;
+    }
+    .navlinks {
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(44, 41, 41);
+        position: fixed;
+        z-index: 100;
+        top: 0px;
+        left: 0px;
+    }
+    .navlinks ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .navlinks ul li{
+        
+    }
+    .navlinks a{
+        color: white;
+    }
+    .navlinks.is-active{
+        display: block;
+    }
+    section .discribe{
+        margin-top: 20px;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        align-items: center;
+    }
+    .certificate{
+        margin: 25px 0px;
+        width: 200px;
+    }
+    .certificate img{
+       min-width: 200px;
+       border-radius: 30px;
+    }
+    .hamburger{
+        display: block;
+        /* background-color: aqua; */
+        width: 50px;
+        height: 50px;
+        z-index: 101;
+    }
+    .hamburger div{
+        width: 80%;
+        height: 5px;
+        background-color: white;
+        margin: 7px 5px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:1332px) {
     .navlinks{
         display: none;
     }
@@ -181,5 +249,25 @@ section .certificate img:hover{
 @media screen and (max-width:350px) {
     .navtext{
         font-size: 20px;
+    }
+}
+@media screen and (max-width:909px) and (min-width:576px) {
+    .navlink ul{
+        display: flex;
+        list-style: none;
+    }
+    .navlink ul li{
+        margin: 0px 5px;
+    }
+    .navlink ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+    .navtext h2{
+        font-size: 20px;
+    }
+    .twitter{
+        display: none;
     }
 }
