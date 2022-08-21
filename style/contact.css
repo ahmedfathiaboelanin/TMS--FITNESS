@@ -11,12 +11,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     font-family: 'Amiri', serif;
 font-family: 'Dancing Script', cursive;
 font-family: 'DynaPuff', cursive;
 }
 .container{
+    margin-top: 100px;
     box-shadow: 10px 10px 20px  red;
     width: 275px;
     height: 500px;
